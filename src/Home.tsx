@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Calculator from "./components/Calculator";
 
 function Home() {
   return (
@@ -28,7 +29,7 @@ function Home() {
               <UserMoneyP>120398109 $</UserMoneyP>
             </UserMoneyDiv>
 
-            <Calculator>계산기</Calculator>
+            <Calculator />
           </UserBoxDiv>
           <UserBoxDiv>
             <BoxTitleh2>거래내역</BoxTitleh2>
@@ -119,14 +120,6 @@ const UserMoneyDiv = styled.div`
 `;
 const UserMoneyP = styled.div`
   margin: 5px 0 0 10px;
-`;
-const Calculator = styled.div`
-  position: relative;
-  z-index: 999;
-  margin: 40px 40px 0;
-  background-color: #fff;
-  height: 400px;
-  border-radius: 10px;
 `;
 const History = styled.div`
   margin: 20px 40px 0;
